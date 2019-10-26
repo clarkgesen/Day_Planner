@@ -4,7 +4,7 @@ $(document).ready(function () {
     var hourTime = parseInt(moment().format('H'));
 
     console.log(hourTime);
-    $("#currentDay").text(moment().format("MMM Do YY"));
+    $("#currentDay").text(moment().format("dddd, MMM Do"));
 
     // saving text content to local storage for each save button
     var hour1 = localStorage.getItem('hour1');
